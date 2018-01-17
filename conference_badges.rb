@@ -18,3 +18,10 @@ def assign_rooms(name_arr)
   }
   rooms = room_assignments.collect{ |i| "Hello, #{i[0]}! You'll be assigned to room #{i[1]}!"}
 end
+
+def printer(attendees)
+  badges = batch_badge_creator(attendees)
+  badges.each { |badge| puts badge }
+  rooms = assign_rooms(attendees)
+  rooms.each { |room| puts room}
+end
