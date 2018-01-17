@@ -6,6 +6,11 @@ end
 def batch_badge_creator(name_arr)
   badge_arr = []
   name_arr.each do |name|
-    badge_arr.shift(badge_maker(name))
+    badge_arr << badge_maker(name)
   end
+  badge_arr
+end
+
+def assign_rooms()
+  
 end
